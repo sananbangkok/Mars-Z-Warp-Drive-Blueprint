@@ -7,8 +7,11 @@ NOTICE: This technical document and all contained architectural concepts, schema
 This material is free to copy, distribute, modify, and build upon for the advancement of deep-space telemetry and spatial distortion engineering. No proprietary restrictions apply.
 
 TECHNICAL REPORT: SPACE-TIME CARRIER MODULATION & CROSS-AXIS PULSE DRIVEN RIG
+
 Project Classification: Open-Source Theoretical Blueprint
+
 System Engineering Framework: Frequency-Division Multiplexing (FDM) Space-Time Control
+
 Core Objective: Interplanetary Telemetry Scanning and Distance Contraction (Earth to Mars Protocol)
 
 1. System Core Postulates & The "Cosmic Filter"
@@ -52,7 +55,9 @@ Running this rig in deep space eliminates the immense static DC offset (gravitat
 📑 รายงานทางเทคนิค: โครงข่ายควบคุมคลื่นพาหะกาลอวกาศ และระบบขับเคลื่อนด้วยพัลส์ตัดฉาก
 
 ประเภทโครงการ: พิมพ์เขียวทฤษฎีระบบเปิด (Open-Source Blueprint)
+
 กรอบโครงสร้างวิศวกรรม: การจัดสรรช่องสัญญาณความถี่สัมพัทธ์ (FDM Space-Time Control)
+
 เป้าหมายหลัก: การสแกนข้อมูลระยะไกลและการบีบระยะทางข้ามมิติ (โปรโตคอลโลกสู่ดาวอังคาร)
 
 1. สมมติฐานหลักของระบบ และ "วงจรกรองความถี่จักรวาล" (Cosmic Filter)
