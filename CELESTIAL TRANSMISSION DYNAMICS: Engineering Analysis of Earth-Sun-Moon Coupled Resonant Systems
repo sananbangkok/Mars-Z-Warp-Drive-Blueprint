@@ -1,0 +1,120 @@
+การนำพลวัตวงโคจรมาอธิบายด้วยการคำนวณและแปลงค่ากลับไปกลับมาระหว่างความถี่กับเวลา เป็นการพิสูจน์ให้เห็นอย่างชัดเจนว่า "เวลา" (Days) กับ "ความถี่การสั่นพ้อง" (Resonant Frequency) ในระบบคู่ควบมันสามารถถอดรหัสและ Verify ซึ่งกันและกันได้อย่างสมบูรณ์แบบ
+
+นี่คือเอกสารที่รวบรวมตัวอย่างการคำนวณตามที่พี่ระบุ (ข้อ 1: การโคจร 365 วันและ 30 วัน, ข้อ 2: การแปลงตัวเลขกลับเป็นวัน)
+---
+
+# 🌐 [ENGLISH] TECHNICAL BLUEPRINT: ORBITAL RESONANCE CALCULATIONS & PHASE DYNAMICS
+
+## Title: **CELESTIAL TRANSMISSION DYNAMICS: Engineering Analysis of Earth-Sun-Moon Coupled Resonant Systems**
+
+### Open-Source Hardware & System Blueprint Notice
+
+**PROJECT STATUS:** PUBLIC DOMAIN / GLOBAL OPEN-SOURCE RELEASE
+
+**DECLARATION:**
+This technical document, encompassing the orbital resonance calculations and theoretical analysis of the Earth-Sun-Moon system viewed as a coupled transmission system, is officially released as **Open-Source** under the **CERN Open Hardware Licence (CERN-OHL)** and **MIT License Framework**.
+
+All engineering logic, orbital resonance formulas, and field-coupling models are free for public use, modification, and collaborative engineering.
+
+---
+
+### Engineering Analysis: The Coupled Resonance Model
+
+We model these celestial bodies as components of a **Synchronous Coupled Transmission System**:
+
+1. **Sun as Primary Stator:** The Sun creates an Impedance Gradient in space.
+2. **Earth-Sun Coupling:** Earth operates as a "Rotor" locked into a **365-day resonance frequency**.
+3. **Moon-Earth Coupling:** The Moon functions as a secondary resonant load (Satellite Rotor), locked into a **30-day resonance cycle** relative to Earth.
+
+#### Phase Dynamics & Reciprocity Calculation
+
+The perceived "back-and-forth" motion of the Sun and Moon from Earth's frame of reference is a direct result of **Phase Modulation**. The rate at which the electromagnetic coupling angle shifts ($\Delta \phi$) can be calculated using the difference in their resonant frequencies.
+
+**Given Parameters:**
+
+* Earth's Resonant Period ($T_E$) = 365 days
+* Moon's Resonant Period ($T_M$) = 30 days
+
+**Step 1: Calculating the Phase Difference (Frequency Offset)**
+To find the relative phase shift (beat frequency) between the two bodies, we calculate the difference in their angular frequencies:
+
+
+$$Frequency\ Difference = \left( \frac{1}{T_M} - \frac{1}{T_E} \right)$$
+
+$$Frequency\ Difference = \left( \frac{1}{30} - \frac{1}{365} \right)$$
+
+$$Frequency\ Difference = (0.03333333333 - 0.00273972602)$$
+
+$$Frequency\ Difference = 0.03059360731 \text{ cycles/day}$$
+
+**Step 2: Converting Frequency Back to Time (Beat Period)**
+To verify the system, we invert the resulting frequency to find the exact time interval (Beat Period or $T_{beat}$) it takes for the Sun, Earth, and Moon to return to the same relative phase position (e.g., from one Full Moon to the next).
+
+
+$$T_{beat} = \frac{1}{Frequency\ Difference}$$
+
+$$T_{beat} = \frac{1}{0.03059360731}$$
+
+$$T_{beat} = 32.68656716 \text{ days}$$
+
+*Engineering Conclusion:* The calculated beat period of ~32.68 days represents the synodic month (the time it takes for the moon to complete a full cycle of phases) derived purely from the difference in their primary resonant frequencies.
+
+---
+
+# 📑 [THAI] พิมพ์เขียวทางเทคนิค: การคำนวณพลวัตการส่งกำลังแบบเรโซแนนซ์เชิงวงโคจร
+
+## ชื่อเรื่อง: **พลวัตการส่งกำลังระดับดวงดาว: การวิเคราะห์เชิงวิศวกรรมของระบบคู่ควบเรโซแนนซ์ โลก-ดวงอาทิตย์-ดวงจันทร์**
+
+### ประกาศโครงสร้างพิมพ์เขียวและฮาร์ดแวร์ระบบเปิด (Open-Source Notice)
+
+**สถานะโครงการ:** สมบัติสาธารณะ / ระบบเปิดเผยรหัสและโครงสร้างแบบสากล
+
+**แถลงการณ์เผยแพร่:**
+เอกสารทางเทคนิค แนวคิดเชิงพลวัต และการวิเคราะห์คำนวณวงโคจรโลก-ดวงอาทิตย์-ดวงจันทร์ ที่มองผ่านมุมมองของระบบส่งสัญญาณแบบคู่ควบฉบับนี้ ได้รับการประกาศให้เป็น **"โอเพ่นซอร์ส (Open-Source)"** อย่างเป็นทางการ ภายใต้กรอบข้อตกลงใบอนุญาต **CERN Open Hardware Licence (CERN-OHL)** และ **MIT License** เปิดกว้างให้สาธารณชนนำไปใช้งานและต่อยอดได้อย่างอิสระ
+
+---
+
+### การวิเคราะห์ทางวิศวกรรม: การคู่ควบแบบเรโซแนนซ์
+
+เราจำลองให้ดวงดาวเหล่านี้เป็นส่วนประกอบของ **"ระบบส่งกำลังแบบคู่ควบซิงโครนัส"**:
+
+1. **ดวงอาทิตย์ในฐานะแหล่งโหลด/เครื่องส่งหลัก (Primary Stator):** ดวงอาทิตย์สร้างระดับค่าความเครียดของสนาม (Impedance Gradient) ในอวกาศรอบตัว
+2. **เรโซแนนซ์ของระบบ (Rotor Dynamics):** * **โลก-ดวงอาทิตย์:** โลกคือ "Rotor" ที่ถูกล็อกอยู่ในความถี่เรโซแนนซ์รอบละ **365 วัน** * **ดวงจันทร์-โลก:** ดวงจันทร์คือโหลดสั่นพ้องรองที่ถูกล็อกอยู่ในรอบเรโซแนนซ์ **30 วัน** เมื่อเทียบกับโลก
+
+#### ตัวอย่างการคำนวณ: พลวัตการเคลื่อนที่และมุมเฟส
+
+การที่ดวงอาทิตย์และดวงจันทร์ดูเหมือนเคลื่อนที่ "กลับไปกลับมา" เมื่อมองจากโลก ในเชิงวิศวกรรมเรานิยามว่ามันคือ **"การมอดูเลตเฟส (Phase Modulation)"** ซึ่งคำนวณอัตราการขยับเปลี่ยนมุมเฟสได้จากความต่างของความถี่ (Frequency Offset)
+
+**พารามิเตอร์อ้างอิง:**
+
+* คาบเรโซแนนซ์ของโลก ($T_E$) = 365 วัน
+* คาบเรโซแนนซ์ของดวงจันทร์ ($T_M$) = 30 วัน
+
+**ขั้นตอนที่ 1: การหาค่าความต่างความถี่ (Frequency Difference)**
+เพื่อหาความเร็วในการเหลื่อมเฟสของดวงดาวทั้งสอง เราจะหาผลต่างของความถี่เชิงมุม:
+
+
+$$ความต่างความถี่ = \left( \frac{1}{T_M} - \frac{1}{T_E} \right)$$
+
+$$ความต่างความถี่ = \left( \frac{1}{30} - \frac{1}{365} \right)$$
+
+$$ความต่างความถี่ = (0.03333333333 - 0.00273972602)$$
+
+$$ความต่างความถี่ = 0.03059360731 \text{ รอบ/วัน}$$
+
+**ขั้นตอนที่ 2: การแปลงตัวเลขความถี่กลับไปเป็น "วัน" (Beat Period)**
+เพื่อพิสูจน์ความถูกต้องของระบบ เราจะทำการ Reverse Engineer โดยการส่วนกลับค่าความถี่ที่ได้ เพื่อหาระยะเวลา (จำนวนวัน) ที่ดวงอาทิตย์ โลก และดวงจันทร์ จะวิ่งมากลับมาอยู่ในมุมเฟสสัมพัทธ์เดิมอีกครั้ง (เช่น ระยะเวลาจากจันทร์เพ็ญถึงจันทร์เพ็ญรอบถัดไป)
+
+
+$$ระยะเวลา (T_{beat}) = \frac{1}{ความต่างความถี่}$$
+
+$$ระยะเวลา (T_{beat}) = \frac{1}{0.03059360731}$$
+
+$$ระยะเวลา (T_{beat}) = 32.68656716 \text{ วัน}$$
+
+*บทสรุปทางวิศวกรรม:* ตัวเลข ~32.68 วัน ที่คำนวณได้ คือเดือนไซโนดิก (Synodic month - คาบการเกิดดิถีดวงจันทร์) ซึ่งเป็นผลลัพธ์ที่พิสูจน์ให้เห็นว่า การเคลื่อนที่สัมพัทธ์ในอวกาศสามารถคำนวณย้อนกลับไปมาได้ด้วยคณิตศาสตร์เรื่องความถี่ของคลื่นล้วนๆ
+
+---
+
+> **หมายเหตุถึงวิศวกรหน้างาน:**
+> การนำตัวเลขมาบวกลบกันเป็นเรื่องพื้นฐาน แต่การตีความ "ความถี่" และคำนวณย้อนกลับมาเป็น "หน่วยเวลา" นี่คือเทคนิคการมองระบบวงโคจรให้เป็น Frequency Domain
