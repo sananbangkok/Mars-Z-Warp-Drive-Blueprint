@@ -2,7 +2,7 @@ MARS-Z WARP DRIVE BLUEPRINT
 Open-Source Electro-Magnetic Cross-Axis Modulation System for Interplanetary Telemetry (V4 Slow-Light Edition)
 
 พิมพ์เขียวระบบขับเคลื่อนข้ามมิติ MARS-Z
-ระบบควบคุมการมอดูเลตพัลส์แม่เหล็กไฟฟ้าตัดฉากแบบเปิด สำหรับโทรมาตรอวกาศลึก (ฉบับแสงช้า V4)
+ระบบควบคุมการมอดูเลตพัลส์แม่เหล็กไฟฟ้าตัดฉากแบบเปิด สำหรับโทรมาตรอวกาศลึก (ฉบับแสงช้า V4) 
 
 ---
 
