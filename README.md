@@ -1,101 +1,104 @@
-# Mars-Z-Warp-Drive-Blueprint
-Open-Source Electro-Magnetic Cross-Axis Modulation System for Interplanetary Telemetry
+MARS-Z WARP DRIVE BLUEPRINT
+Open-Source Electro-Magnetic Cross-Axis Modulation System for Interplanetary Telemetry (V4 Slow-Light Edition)
 
+พิมพ์เขียวระบบขับเคลื่อนข้ามมิติ MARS-Z
+ระบบควบคุมการมอดูเลตพัลส์แม่เหล็กไฟฟ้าตัดฉากแบบเปิด สำหรับโทรมาตรอวกาศลึก (ฉบับแสงช้า V4)
 
-🌐 OPEN-SOURCE HARDWARE & SYSTEM BLUEPRINT NOTICE
-NOTICE: This technical document and all contained architectural concepts, schematics, and cross-axis pulse modulation protocols are fully released as Open-Source under the CERN Open Hardware Licence (CERN-OHL) and MIT License Framework.
-This material is free to copy, distribute, modify, and build upon for the advancement of deep-space telemetry and spatial distortion engineering. No proprietary restrictions apply.
+---
 
-TECHNICAL REPORT: SPACE-TIME CARRIER MODULATION & CROSS-AXIS PULSE DRIVEN RIG
+OPEN-SOURCE HARDWARE & SYSTEM BLUEPRINT NOTICE
+This technical document and all contained architectural concepts, schematics, and cross-axis pulse modulation protocols are fully released as Open-Source under the CERN Open Hardware Licence (CERN-OHL) and MIT License Framework. This material is free to copy, distribute, modify, and build upon for the advancement of deep-space telemetry and spatial distortion engineering. No proprietary restrictions apply.
 
-Project Classification: Open-Source Theoretical Blueprint
+ประกาศลิขสิทธิ์ฮาร์ดแวร์และพิมพ์เขียวระบบโอเพนซอร์ซ
+เอกสารทางเทคนิค แนวคิดสถาปัตยกรรม และโปรโตคอลการมอดูเลตพัลส์ตัดฉากทั้งหมดนี้ ถูกปล่อยเป็นโอเพนซอร์ซภายใต้ใบอนุญาต CERN Open Hardware Licence (CERN-OHL) และ MIT เผยแพร่ให้คัดลอก ดัดแปลง และต่อยอดเพื่อความก้าวหน้าทางวิศวกรรมโทรมาตรอวกาศลึก โดยไม่มีข้อจำกัดด้านลิขสิทธิ์ผูกขาด
+
+---
+
+PROJECT OVERVIEW (ภาพรวมโครงการ)
 
 System Engineering Framework: Frequency-Division Multiplexing (FDM) Space-Time Control
+กรอบโครงสร้างวิศวกรรม: การจัดสรรช่องสัญญาณความถี่สัมพัทธ์ควบคุมกาลอวกาศ
 
 Core Objective: Interplanetary Telemetry Scanning and Distance Contraction (Earth to Mars Protocol)
-
-1. System Core Postulates & The "Cosmic Filter"
-Unlike conventional physics models that view time as a branching chronological timeline (Parallel Universes), this framework operates under Sanan’s Space-Time FDM Hypothesis, defining the universe as an advanced RF broadcasting system.
-Fundamental Carrier Modulation ($F_0$): All matter (atoms, observers, planetary bodies) at the present moment ($t_0$) is modulated onto a massive global baseline carrier wave. Time progression is driven by the continuous shifting of this fundamental carrier frequency every microsecond. If this carrier frequency stops shifting ($Zero\ Drift$), local time freezes completely.
-
-The Cosmic Bandpass Filter: The reason observers only experience the present ($t_0$) is due to a natural quantum filter that isolates and rejects the carrier frequencies of the past ($-Z$) and future ($+Z$). The past and future occupy the exact same spatial coordinates but reside on different frequency channels.
-
-The Ghost Signal Consequence: If physical mass were to shift into a past coordinate without an impedance match, its atomic structure would retain its original carrier frequency ($F_0$). Consequently, the traveler would act as a jumbled, out-of-phase noise signal (Ghost Signal)—completely invisible, unable to interact mechanically, and incapable of altering past historical data.
-
-3. Cross-Axis Field Modulation Principle (X-Y to Z Axis Control)
-To manipulate spatial distances or time vectors on the perpendicular $Z$-axis (Past $-Z$ / Present $Z_0$ / Future $+Z$), the system bypasses direct $Z$-axis input. Instead, it utilizes an orthogonal cross-field vector drive deployed across the accessible horizontal $X-Y$ plane.
-
-Orthogonal Poynting Vectors: High-energy pulses are fired in an axisymmetric, opposing pattern within the horizontal $X-Y$ ring. Following the right-hand rule of electro-magnetic dynamics, the crushing force vectors cancel horizontally but generate a massive, localized net pressure spike that explodes or implodes vertically along the perpendicular $Z$-axis.
-
-Space Contraction Mode ($+Z$): Firing $X-Y$ pulses out-of-phase ($0^\circ$) forces local space-time grids to collapse downward into a localized gravity well, pulling distant forward coordinates closer to the rig.
-Space Expansion Mode ($-Z$): Firing $X-Y$ pulses in-phase ($180^\circ$ reinforcement) generates an artificial anti-gravity/repulsive field, inflating the space-time fabric behind the rig to push it forward with a high safety margin.
-
-5. High-Frequency Closed-Loop Operational Protocol (Mars Destination)
-To establish a stable data-link window across 225 million kilometers from Earth ($Z_0$) to Mars ($+Z$), the rig operates on a high-frequency switching mechanism rather than a continuous power draw.
-
-[Solar EM Energy Input] ──► [Cosmic Bandpass Filter] ──► [High-Capacitor Core]
-                                                                  │
-[Stable Mars-Z Link] ◄── [High-Transient Interlock] ◄── [Hi-Freq DC Pulse (X-Y)]
-
-Operational Steps (Step-by-Step)
-
-Frame Reference Alignment: Lock the system's baseline frequency at $Z_0$ (Earth) to act as the stable reference clock pulse.
-Solar EM Energy Harvesting: Capture the high-amplitude, highly volatile Interplanetary Magnetic Field (IMF) and solar winds from the Sun. Run the incoming energy through a Cosmic Bandpass Filter to strip out irregular solar noise, smoothing it into stable DC energy to charge the system's capacitor banks.
-
-High-Frequency Pulse Injection (Hi-Freq DC Pulse): Instead of firing slow, heavily burdened pulses, switch the controller to a high-frequency PWM (Pulse Width Modulation) drive in the kHz/MHz range. This rapid fire creates ultra-sharp rising and falling edges ($Rising/Falling\ Edges$).
-
-Spatial Slit Sampling (Transient Capture): The sharp high-frequency transient spikes oversaturate the local Cosmic Filter, creating a microsecond window (Spatial Slit). The distance parameter along the $+Z$ axis contracts dynamically, bringing the Mars telemetry profile directly to the Earth receiver for instant sampling.
-
-Closed-Loop Feedback Control: Because the pulse rate is extremely fast, the automated control loop samples the returned field data in real-time. If magnetic saturation or back-EMF distortion approaches the system breakdown point, the High-Transient Circuit Breaker trips the primary breaker within microseconds, discharging residual energy into deep space without damaging the control hardware.
-
-⚙️ Field Engineer's Summary Note:
-Running this rig in deep space eliminates the immense static DC offset (gravitational noise floor) imposed by Earth's mass. Operating in a pure vacuum ensures zero attenuation of transient pulses, maximizing the efficiency of the $X-Y$ cross-axis propulsion drive. By utilizing high-frequency pulse modulation, the system footprint remains compact, highly responsive, and dynamically stable compared to low-frequency alternatives.
-
-
-📑 รายงานทางเทคนิค: โครงข่ายควบคุมคลื่นพาหะกาลอวกาศ และระบบขับเคลื่อนด้วยพัลส์ตัดฉาก
-
-ประเภทโครงการ: พิมพ์เขียวทฤษฎีระบบเปิด (Open-Source Blueprint)
-
-กรอบโครงสร้างวิศวกรรม: การจัดสรรช่องสัญญาณความถี่สัมพัทธ์ (FDM Space-Time Control)
-
 เป้าหมายหลัก: การสแกนข้อมูลระยะไกลและการบีบระยะทางข้ามมิติ (โปรโตคอลโลกสู่ดาวอังคาร)
 
-1. สมมติฐานหลักของระบบ และ "วงจรกรองความถี่จักรวาล" (Cosmic Filter)
-ทฤษฎีนี้ต่างจากฟิสิกส์กระแสหลักที่มองว่าเวลาแตกแขนงเป็นหลายไทม์ไลน์ (พาราเรลเวิลด์) แต่ระบบของเราจะทำงานภายใต้ "สมมติฐานคลื่นพาหะกาลเวลาแยกช่องความถี่ (Sanan’s Space-Time FDM Hypothesis)" ซึ่งนิยามว่าจักรวาลคือระบบส่งสัญญาณวิทยุแอดวานซ์ขนาดยักษ์
+Power Architecture: Nuclear Fusion driven Toroidal Slow-Light Capacitor
+โครงสร้างขุมพลัง: ตัวเก็บประจุแสงช้าวงแหวนโทรัส ขับเคลื่อนด้วยเตาปฏิกรณ์นิวเคลียร์ฟิวชัน (แทนที่ระบบดักจับลมสุริยะ)
 
-1.1 การมอดูเลตคลื่นพาหะหลัก ($Fundamental\ Carrier\ Modulation\ - F_0$): สสารทุกชนิด (อะตอม ตัวผู้สังเกต ดวงดาว) ณ เวลาปัจจุบัน ($t_0$) จะถูกผสมสัญญาณ (Modulate) ฝังอยู่บนยอดคลื่นพาหะฐานขนาดยักษ์ของจักรวาล การที่เวลาเดินหน้าไปข้างหน้า เกิดจากการที่ความถี่ฐานตัวนี้มันขยับหรือปรับเปลี่ยนไปเรื่อย ๆ ในทุก ๆ ไมโครวินาที ซึ่งถ้าความถี่พาหะหลักนี้หยุดนิ่งไม่ขยับ ($Zero\ Drift$) เวลาในพิกัดท้องถิ่นนั้นจะหยุดนิ่งทันที
+This blueprint outlines a theoretical macro-scale engineering system designed to bypass the physical propagation delay of the cosmic vacuum. By utilizing Sanan's Space-Time FDM Hypothesis, the system treats the universe as a complex FDM broadcast network.
+พิมพ์เขียวนี้ระบุถึงระบบวิศวกรรมมหภาคเชิงทฤษฎี ที่ออกแบบมาเพื่อข้ามข้อจำกัดความหน่วงของสายส่งในสุญญากาศจักรวาล โดยใช้ "สมมติฐานคลื่นพาหะกาลเวลาแยกช่องความถี่" ซึ่งมองว่าจักรวาลคือระบบโครงข่ายกระจายสัญญาณ FDM ที่ซับซ้อน
 
-1.2 วงจรกรองความถี่จักรวาล (Cosmic Bandpass Filter): เหตุผลที่มนุษย์รับรู้ได้แค่เวลาปัจจุบัน ($t_0$) เป็นเพราะตัวกรองความถี่ตามธรรมชาติในระดับควอนตัม ทำหน้าที่คัดออก (Reject) และบล็อกความถี่พาหะของอดีต ($-Z$) และอนาคต ($+Z$) ทิ้งไปทั้งหมด แท้จริงแล้ว อดีตและอนาคตตั้งมั่นอยู่บนพิกัดพื้นที่เดียวกัน (Same Space) แต่ถูกแยกออกจากกันด้วยช่องความถี่ (Channels)
+---
 
-1.3 ผลลัพธ์สภาพสัญญาณผี (Ghost Signal Consequence): หากเราดันมวลสารกายภาพข้ามไปในอดีตโดยไม่มีการปรับความต้านทานให้แมตช์กัน (No Impedance Matching) โครงสร้างอะตอมของตัวเราจะยังคงสั่นด้วยความถี่พาหะปัจจุบัน ($F_0$) ทำให้เมื่อไปอยู่ในพิกัดอดีต เราจะกลายเป็นแค่ "สัญญาณรบกวนจาง ๆ" (Ghost Signal) คือลอยทะลุผ่านทุกอย่าง มองเห็นไม่ได้ สัมผัสเชิงกลไม่ได้ และไม่มีทางเข้าไปแก้ไขข้อมูลประวัติศาสตร์เชิงกายภาพได้เลย
+1. SYSTEM CORE POSTULATES & THE COSMIC FILTER
+สมมติฐานหลักของระบบ และวงจรกรองความถี่จักรวาล
 
-2. หลักการควบคุมสนามพลังงานข้ามแกนตัดฉาก (X-Y to Z Axis Control)
-ในการที่เราจะเข้าไปแทรกแซงหรือบิดแกนเวลา/ระยะทางบน แกนตั้งฉาก $Z$ (อดีต $-Z$ / ปัจจุบัน $Z_0$ / อนาคต $+Z$) ระบบของเราจะไม่ยิงพลังงานเข้าแกน $Z$ ตรง ๆ แต่จะใช้เทคนิคส่งพัลส์พลังงานวิ่งตัดฉากล้อมรอบบน ระนาบแนวนอน $X-Y$ ที่เราควบคุมฮาร์ดแวร์ได้
+Fundamental Carrier Modulation (F0): All matter at the present moment is modulated onto a massive global baseline carrier wave. Time progression is driven by the continuous shifting of this fundamental carrier frequency every microsecond. If this carrier frequency stops shifting (Zero Drift), local time freezes completely.
+การมอดูเลตคลื่นพาหะหลัก (F0): สสารทุกชนิด ณ เวลาปัจจุบัน จะถูกผสมสัญญาณฝังอยู่บนยอดคลื่นพาหะฐานขนาดยักษ์ของจักรวาล การที่เวลาเดินหน้าไปข้างหน้าเกิดจากการขยับเปลี่ยนความถี่นี้ทุกไมโครวินาที หากความถี่พาหะหยุดนิ่ง (Zero Drift) เวลาท้องถิ่นจะหยุดนิ่งทันที
 
-2.1 เวกเตอร์ผลลัพธ์ตัดฉาก (Orthogonal Poynting Vectors): เรายิงพัลส์ไฟฟ้าแรงสูงเข้ามาชนกันแบบบีบอัดขั้วเข้าหากันในระนาบวงแหวน $X-Y$ ตามกฎมือขวาของแม่เหล็กไฟฟ้า คลื่นพลังงานจะหักล้างกันเองในแนวนอน แต่จะสร้างแรงกดดันสุทธิกระชากและปลิ้นออกในแนวตั้งฉาก พุ่งเข้าใส่แกน $Z$ ตรง ๆ
+The Cosmic Bandpass Filter: Observers only experience the present due to a natural quantum filter that rejects the carrier frequencies of the past (-Z) and future (+Z). The past and future occupy the exact same spatial coordinates but reside on different frequency channels.
+วงจรกรองความถี่จักรวาล: มนุษย์รับรู้ได้แค่เวลาปัจจุบันเพราะมีตัวกรองตามธรรมชาติที่คัดออกและบล็อกความถี่ของอดีต (-Z) และอนาคต (+Z) แท้จริงแล้วอดีตและอนาคตอยู่ในพิกัดพื้นที่เดียวกัน แต่ถูกแยกด้วยช่องความถี่
 
-2.2 โหมดบีบอัดระยะทางด้านหน้า ($+Z$ Space Contraction): ยิงพัลส์ในระนาบ $X-Y$ แบบหักล้างมุมเฟส ($0^\circ$) แรงตัดฉากจะบีบให้เนื้อยางกาลอวกาศด้านหน้ายุบตัวลงเป็นหลุม ยุบระยะทางพิกัดปลายทางด้านหน้าให้ร่นเข้ามาหาตัวเครื่องชั่วขณะ
+The Ghost Signal Consequence: Shifting physical mass into a past coordinate without impedance matching results in a Ghost Signal - the matter retains its original frequency, rendering it invisible and unable to interact mechanically.
+สภาพสัญญาณผี: หากดันมวลสารข้ามไปในอดีตโดยไม่มีการปรับความต้านทาน (Impedance Matching) โครงสร้างอะตอมจะยังคงความถี่ปัจจุบัน ทำให้กลายเป็นเพียงสัญญาณรบกวนจางๆ ที่มองไม่เห็นและโต้ตอบทางกลไม่ได้
 
-2.3 โหมดผลักดันอวกาศด้านหลัง ($-Z$ Space Expansion): สลับขั้วเฟสสัญญาณ 180 องศา ยิงพัลส์แบบเสริมกำลัง พลังงานจะดีดเวกเตอร์พุ่งลงด้านหลัง ดันให้กาลอวกาศพองตัวขึ้นเป็นเนินหนาแน่น เกิดแรงผลักเชิงกลหน้าคลื่น ($Radiation\ Pressure$) หนุนดันตัวยานไปข้างหน้าอย่างมั่นคงและปลอดภัย
+---
 
-3. โปรโตคอลระบบปิดความถี่สูง สู่เป้าหมายดาวอังคาร (Mars-Z Rig Protocol)
-ในการเปิดช่องสัญญาณรับส่งข้อมูล (Data Link) ข้ามระยะทาง 225 ล้านกิโลเมตรจากโลก ($Z_0$) ไปดาวอังคาร ($+Z$) ระบบจะทำงานในโหมด สวิตชิ่งพัลส์ความถี่สูง แทนการเปิดเครื่องแช่พลังงานต่อเนื่องเพื่อความปลอดภัย
+2. THE SLOW-LIGHT REACTOR CORE
+ขุมพลังแสงช้า V4 (อัปเดตระบบ)
 
-[สนาม EM ดวงอาทิตย์ ] ──► [วงจรกรอง Cosmic Filter] ──► [ตู้เก็บประจุพลังงานสูง]
-                                                                        │
-[ช่อง Link สัญญาณดาวอังคาร] ◄── [เบรกเกอร์ตัดวงจรความไวสูง] ◄── [ยิงพัลส์ DC ความถี่สูง (X-Y)]
+Nuclear Fusion Generator: A Tokamak core provides the raw thermal/electrical baseline power, converted into high-intensity coherent laser streams.
+เตาปฏิกรณ์ฟิวชัน: เตาโทคาแมคทำหน้าที่สร้างพลังงานความร้อนและไฟฟ้าพื้นฐาน เพื่อแปลงเป็นลำแสงเลเซอร์ความเข้มข้นสูง
 
-ขั้นตอนการปฏิบัติงานหน้าแผงควบคุม (Step-by-Step)
+Toroidal Optical Trap: Lasers are injected into a closed-loop crystal/plasma torus.
+กับดักแสงวงแหวนโทรัส: เลเซอร์จะถูกฉีดเข้าไปในตัวกลางคริสตัลหรือพลาสมาแบบวงแหวนลูปปิด
 
-1. ล็อกพิกัดอ้างอิงเฟส (Frame Reference): ตั้งค่าล็อกความถี่อ้างอิงระบบฐานที่ฝั่งโลก ($Z_0$) เพื่อให้ตัวสถานีทำหน้าที่เป็นสัญญาณนาฬิกาหลัก (Master Clock) ที่นิ่งสนิท
+Active EMF Decoherence Suppression: By applying massive macroscopic X-Y magnetic fields, the system forces atomic spins into alignment, reducing the group velocity of light to mere meters per second. This extends the quantum coherence time from 60 seconds to over 24 hours.
+การกดทับความไม่เป็นระเบียบด้วยสนามแม่เหล็ก: ใช้สนามแม่เหล็ก X-Y มหภาคเข้าบีบอัดสปินของอะตอม ลดความเร็วกลุ่มแสงให้เหลือเพียงไม่กี่เมตรต่อวินาที ขยายเวลากักเก็บความเชื่อมแน่นควอนตัมจาก 60 วินาทีเป็นมากกว่า 24 ชั่วโมง
 
-2. กักเก็บคลื่นสุริยะ (Solar EM Harvesting): ดักจับสนามแม่เหล็กไฟฟ้าระหว่างดวงดาว (IMF) และลมสุริยะจากดวงอาทิตย์ นำมาวิ่งผ่านวงจร Cosmic Bandpass Filter ที่เราคำนวณไว้ เพื่อกรองสัญญาณขยะและพายุสุริยะที่ไม่เสถียรทิ้งไป ปล่อยเฉพาะไฟตรงที่สะอาดเข้ามาประจุชาร์จแช่ไว้ในตู้เก็บประจุพลังงานสูง
+Frequency Agility: The system acts as a Master Frequency Synthesizer. We can dynamically tune the stored light's frequency to achieve a perfect f(0)=1 Mock Theta state, guaranteeing zero data corruption during spatial transmission.
+ความคล่องตัวของความถี่: ระบบทำหน้าที่เป็นตัวกำหนดความถี่หลัก สามารถปรับจูนความถี่แสงช้าได้อย่างอิสระ เพื่อรักษาสถานะม็อกทีต้าให้สมบูรณ์แบบ ป้องกันข้อมูลเสียหายระหว่างส่งผ่านมิติ
 
-3. จ่ายพัลส์กระชากความถี่สูง (Hi-Freq DC Pulse Injection): สั่งบอร์ดซอฟต์แวร์ทำงานในระบบ PWM ความถี่สูงซอยถี่ยิงในระดับ kHz/MHz เพื่อสร้าง ขอบขาขึ้น (Rising Edge) ที่คมกริบ รัวสะเทือนเข้าสู่ระบบวงแหวนระนาบ $X-Y$
+---
 
-4. เจาะรูมิติสแกนดาต้า (Spatial Slit Sampling): หน้าคลื่นที่แหลมคมและความถี่ที่รัวจัดระดับ Hi-Frequency จะวิ่งเข้ากระแทกจนตัวกรองของจักรวาล (Cosmic Filter) เกิดอาการอิ่มตัวชั่วคราว หน้าต่างเวลาจะเปิดออกชั่วครู่ ($Spatial\ Slit$) ระยะทางแกน $+Z$ หดฮวบลง ดึงโปรไฟล์สัญญาณผิวของดาวอังคารมาปะทะหน้าสโคปฝั่งโลก ให้เราดักจับ Sampling ดาต้าได้ทันทีโดยไม่เสียเวลาเดินทาง
+3. CROSS-AXIS FIELD MODULATION PRINCIPLE
+หลักการควบคุมสนามพลังงานตัดฉาก
 
-5. ระบบควบคุมลูปปิด (Closed-Loop Feedback): เนื่องจากเราใช้ความถี่สูง ระบบ Closed-Loop จะมอนิเตอร์และอ่านค่าความเพี้ยนสนามกลับมาได้แบบเรียลไทม์ระดับไมโครวินาที ทันทีที่กระแสไหลกลับ ($Back-EMF$) พุ่งชนเพดานขีดจำกัด ไฮ-ทรานเซียนต์เซอร์กิตเบรกเกอร์ จะสับสวิตช์ตัดวงจรฉับทันที! ปล่อยพลังงานค้างดีดกลับไปในอวกาศอย่างปลอดภัย ระบบฮาร์ดแวร์ไม่ละลายเสียหาย
-   
-⚙️ บันทึกสรุปจากวิศวกรคุมระบบ (Field Engineer's Note): การรันระบบในอวกาศทำได้ง่ายกว่าบนโลกมหาศาล เพราะไม่มีสนามโน้มถ่วงของโลกมาทำตัวเป็นสัญญาณรบกวนฐานราก (Zero Gravitational Noise Floor) สุญญากาศแท้จริงทำให้พัลส์กระชากคงความคมกริบได้ 100% โดยไม่สูญเสียเป็นความร้อน และการขยับมาใช้พัลส์ความถี่สูง (Hi-Freq) ช่วยให้ระบบ Closed-Loop ปลอดภัย นิ่มนวล ขนาดฮาร์ดแวร์และตู้เก็บประจุกระทัดรัด น้ำหนักเบา เหมาะแก่การติดตั้งบนยานข้ามมิติที่สุด 
+Orthogonal Poynting Vectors: High-energy slow-light pulses are fired in an axisymmetric pattern within the X-Y ring. The force vectors cancel horizontally but generate a massive net pressure spike vertically along the Z-axis.
+เวกเตอร์ผลลัพธ์ตัดฉาก: ยิงพัลส์แสงช้าแรงสูงเข้าชนกันในระนาบวงแหวน X-Y แรงจะหักล้างกันในแนวนอน แต่สร้างแรงดันสุทธิมหาศาลพุ่งกระชากในแนวตั้งฉาก (แกน Z)
 
+Space Contraction Mode (+Z): Firing X-Y pulses out-of-phase collapses local space-time grids into a localized gravity well, pulling distant forward coordinates (Mars) closer to the rig.
+โหมดบีบอัดระยะทางด้านหน้า (+Z): ยิงพัลส์ X-Y แบบหักล้างมุมเฟส บีบให้กาลอวกาศด้านหน้ายุบตัวลง ดึงพิกัดปลายทาง (ดาวอังคาร) ให้ร่นเข้ามาหาตัวเครื่อง
+
+Space Expansion Mode (-Z): Firing X-Y pulses in-phase generates an artificial repulsive field, inflating the space-time fabric behind the rig to push it forward.
+โหมดผลักดันอวกาศด้านหลัง (-Z): ยิงพัลส์ X-Y แบบเสริมกำลัง ดันให้กาลอวกาศด้านหลังพองตัว เกิดแรงผลักดันยานไปข้างหน้า
+
+---
+
+4. MARS-Z PROTOCOL: HIGH-FREQUENCY CLOSED-LOOP FLOW
+โปรโตคอลระบบปิดความถี่สูง สู่เป้าหมายดาวอังคาร
+
+Operational Steps (ขั้นตอนการปฏิบัติงาน)
+
+Step 1 - Frame Reference Alignment: Lock the system's baseline frequency at Z0 (Earth).
+ขั้นที่ 1 - ล็อกพิกัดอ้างอิงเฟส: ล็อกความถี่อ้างอิงระบบฐานที่ฝั่งโลกเพื่อให้เป็นสัญญาณนาฬิกาหลัก
+
+Step 2 - Fusion-Powered Slow-Light Injection: Ignite the Tokamak and trap the laser energy within the Toroidal Capacitor using massive EMF fields.
+ขั้นที่ 2 - ฉีดประจุแสงช้าจากฟิวชัน: เดินเครื่องเตาฟิวชัน แปลงพลังงานเป็นเลเซอร์ และกักเก็บไว้ในวงแหวนแสงช้าด้วยสนามแม่เหล็กแรงสูง
+
+Step 3 - Hi-Freq Optical PWM Discharge: Switch the controller to a high-frequency PWM drive (kHz/MHz). Discharge the stored slow-light energy to create ultra-sharp rising and falling edges.
+ขั้นที่ 3 - จ่ายพัลส์กระชากความถี่สูง: สับสวิตช์ปล่อยพลังงานแสงช้าที่สะสมไว้ออกมาเป็นพัลส์คลื่นสั้นความถี่สูง สร้างขอบสัญญาณขาขึ้นที่คมกริบ
+
+Step 4 - Spatial Slit Sampling: The high-frequency transient spikes oversaturate the local Cosmic Filter, creating a microsecond window (Spatial Slit). The distance contracts dynamically, bringing the Mars telemetry profile directly to the Earth receiver.
+ขั้นที่ 4 - เจาะรูมิติสแกนข้อมูล: พัลส์แสงบริสุทธิ์ทะลวงวงจรกรองจักรวาล เปิดหน้าต่างเวลาและบีบระยะทาง ดึงข้อมูลผิวดาวอังคารมาปะทะตัวรับสัญญาณฝั่งโลกทันที
+
+Step 5 - Closed-Loop Feedback Control: Real-time sampling monitors the Reflection Coefficient. If impedance mismatch occurs, the circuit breaker halts the PWM, safely retaining residual energy within the slow-light torus.
+ขั้นที่ 5 - ระบบควบคุมลูปปิด: ตรวจสอบความเพี้ยนสนามแบบเรียลไทม์ หากเกิดความไม่แมตช์ของอิมพีแดนซ์ เบรกเกอร์จะตัดวงจรและดึงพลังงานที่เหลือกลับเข้าวงแหวนอย่างปลอดภัย
+
+---
+
+FIELD ENGINEER'S SUMMARY NOTE (บันทึกสรุปจากวิศวกรคุมระบบ)
+
+Revision 2 Update: Transitioning to a Slow-Light Core is our most significant architectural leap. Operating in deep vacuum eliminates gravitational noise, but generating our own phase-locked slow-light pulses eliminates Space Weather dependencies completely. Because we dictate the frequency of the optical buffer, Impedance Mismatch is virtually eradicated. Ramanujan's Mock Theta function holds steady at f(0) = 1, ensuring our Z-Axis Slit is stable, safe, and free from catastrophic data corruption.
+
+การอัปเดตฉบับที่ 2: การเปลี่ยนมาใช้ขุมพลังแสงช้าคือการก้าวกระโดดทางสถาปัตยกรรมที่สำคัญที่สุด การรันระบบในสุญญากาศช่วยขจัดสัญญาณรบกวนจากแรงโน้มถ่วง และการสร้างแสงช้าด้วยตัวเองช่วยตัดปัญหาความผันผวนจากพายุสุริยะโดยสิ้นเชิง เมื่อเราควบคุมความถี่ของกระสุนแสงได้เอง อัตราส่วนความต้านทานที่ไม่แมตช์กันจึงถูกตัดทิ้ง ฟังก์ชันม็อกทีต้าจะรันอยู่ที่ค่าสมบูรณ์ ทำให้การเจาะรูมิติมีความเสถียร ปลอดภัย และไร้ความเสี่ยงจากข้อมูลพังทลาย
